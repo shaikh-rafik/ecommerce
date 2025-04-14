@@ -8,6 +8,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const navLinks = [
     { name: "Home", href: "/" },
